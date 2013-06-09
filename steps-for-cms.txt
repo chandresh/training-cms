@@ -53,7 +53,7 @@ http_basic_authenticate_with :name => "admin", :password => "secret", :except =>
 
 Add this at the bottom of routes.rb:
 
-get "/:id" => 'pages#show', as: :page
+get "/:id" => 'pages#show'
 
 11) Create links in layout:
 
