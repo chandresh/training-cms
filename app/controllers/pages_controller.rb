@@ -1,11 +1,21 @@
 class PagesController < ApplicationController
 
-  def index
+  http_basic_authenticate_with :name => "admin", :password => "secret", :except => [:show, :home]
+
+  def home
     @pages = Page.all
   end
 
-  def about
+  def admin
 
+  end
+
+  def contact
+
+  end
+
+  def index
+    @pages = Page.all
   end
 
   def show
