@@ -97,7 +97,17 @@ def home
 
 23) score instead of class methods.
 
-24) Added title
+24) Add title
+
+25) Add simple_form gem (read from simple_form github page)
+
+26) Create a new scaffold for category
+
+27) Convert Pages form to simple_form
+
+28) create association between category & pages
+
+29) Use simple_form helper association to create a category drop-down in pages form.
 
 ------------
 - Please keep committing to git & pushing to Github.
