@@ -38,8 +38,8 @@ background: url(images/img02.gif) to background: url("img02.gif")
 -> rake db:migrate
 -> Add to model: page.rb
 
-extend FriendlyId
-  friendly_id :name, use: [:slugged, :history]
+		extend FriendlyId
+		friendly_id :name, use: [:slugged, :history]
 
 -> restart the server
 
@@ -59,10 +59,38 @@ get "/:id" => 'pages#show', as: :page
 
 <%= link_to "About", page_path(:about) %>
 
+12) Add an admin page
+
+13) Create Partials to keep things like header, footer, menu, sidebar
+etc.
+
+14) Show all the pages on the homepage.
+
+15) Contact scaffold
+
+16) link to contact in the menu
+
+17) Add contact to admin
+
+18) Add boolean field for featured:
+
+rails g migration add_featured_to_pages featured:boolean
+rake db:migrate
+
+19) Created a class method in Page model:
+
+def self.featured
+    where(featured: true)
+  end
+
+20) Used the class method to get featured posts in pages controller action:
+
+def home
+    @pages = Page.featured
+  end
+
+------------
 - Please keep committing to git & pushing to Github.
-
-
----------
 
 git remote add origin https://github.com/your-username/repo-name.git
 git push -u origin master

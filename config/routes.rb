@@ -3,7 +3,7 @@ Cms::Application.routes.draw do
   resources :contacts
 
 
-  resources :pages, except: :show
+  resources :pages
   root :to => 'pages#home'
 
   controller :pages do
