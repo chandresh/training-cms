@@ -109,6 +109,10 @@ def home
 
 29) Use simple_form helper association to create a category drop-down in pages form.
 
+30) Display pages based on category on the category show page.
+
+31) Used partials to make the code dry: both at home as well as the category show page.
+
 ------------
 - Please keep committing to git & pushing to Github.
 

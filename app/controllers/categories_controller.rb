@@ -1,5 +1,5 @@
 class CategoriesController < ApplicationController
-  before_filter :authenticate_with_basic
+  before_filter :authenticate_with_basic, except: :show
   # GET /categories
   # GET /categories.json
   def index

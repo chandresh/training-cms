@@ -2,17 +2,4 @@
     My Homepage
 <% end %>
 
-<% @pages.each do |page| %>
-
-    <div class="post">
-      <h2 class="title"><%= link_to page.title, page %></h2>
-      <br/>
-
-      <div class="entry">
-        <%= page.content.html_safe %>
-        <br/>
-        <%= link_to 'Edit', edit_page_path(page) if admin? %>
-      </div>
-    </div>
-
-<% end %>
+<%= render @pages %>
