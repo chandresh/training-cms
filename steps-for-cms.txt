@@ -97,6 +97,8 @@ def home
 
 23) score instead of class methods.
 
+24) Added title
+
 ------------
 - Please keep committing to git & pushing to Github.
 

@@ -1,5 +1,8 @@
 Cms::Application.routes.draw do
 
+  resources :categories
+
+
   resources :contacts
 
 
