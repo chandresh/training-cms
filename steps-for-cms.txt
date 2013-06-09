@@ -95,6 +95,8 @@ def home
 
 22) Use sessions to store if an admin is logged in and use it to check if we should show the admin options like edit.
 
+23) score instead of class methods.
+
 ------------
 - Please keep committing to git & pushing to Github.
 
