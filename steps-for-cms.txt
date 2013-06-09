@@ -120,6 +120,10 @@ def home
 
 31) Use partials to make the code dry: both at home as well as the category show page.
 
+use special syntax to show the collection partial:
+
+<%= render @pages %>
+
 32) Show the pages on homepage based on category.
 
 ------------
