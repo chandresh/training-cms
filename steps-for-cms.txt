@@ -89,6 +89,12 @@ def home
     @pages = Page.featured
   end
 
+###
+
+21) Create authenticate method and use it in before_filter
+
+22) Use sessions to store if an admin is logged in and use it to check if we should show the admin options like edit.
+
 ------------
 - Please keep committing to git & pushing to Github.
 
