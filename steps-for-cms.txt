@@ -118,7 +118,7 @@ def home
 
 30) Display pages based on category on the category show page.
 
-31) Used partials to make the code dry: both at home as well as the category show page.
+31) Use partials to make the code dry: both at home as well as the category show page.
 
 32) Show the pages on homepage based on category.
 

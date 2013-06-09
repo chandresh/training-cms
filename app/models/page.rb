@@ -12,6 +12,8 @@ class Page < ActiveRecord::Base
   def self.featured
     #show the pages which are in featured category
     Category.find_by_name("featured").pages
+  rescue
+    []
   end
 
 end
