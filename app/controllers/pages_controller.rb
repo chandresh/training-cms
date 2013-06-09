@@ -4,8 +4,12 @@ class PagesController < ApplicationController
     @pages = Page.all
   end
 
+  def about
+
+  end
+
   def show
-    @page = Page.find_by_name(params[:id])
+    @page = Page.find(params[:id])
   end
 
 
