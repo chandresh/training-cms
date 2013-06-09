@@ -4,8 +4,6 @@ class Page < ActiveRecord::Base
   extend FriendlyId
   friendly_id :name, use: [:slugged, :history]
 
-  def self.featured
-    where(featured: true)
-  end
+  scope :featured, where(featured: true)
 
 end
