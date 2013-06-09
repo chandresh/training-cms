@@ -15,6 +15,7 @@ https://github.com/mikekhd/shiny-nemesis.git
 https://github.com/EvgeniiS/Practice.git
 https://github.com/krison44/ruby_cms
 https://github.com/JPGMX/gitproject
+https://github.com/osmarmon32/test-cms
 
 6) use the template:
 -> delete public/index.html
@@ -92,12 +93,17 @@ def home
 ###
 
 21) Create authenticate method and use it in before_filter
+	Use: authenticate_or_request_with_http_basic
 
 22) Use sessions to store if an admin is logged in and use it to check if we should show the admin options like edit.
+	Use: session[:admin]
 
-23) score instead of class methods.
+23) scope instead of class methods.
 
-24) Add title
+24) Add title using:
+	provide(:title)
+	content_for?(:title)
+	yield(:title)
 
 25) Add simple_form gem (read from simple_form github page)
 
@@ -108,10 +114,13 @@ def home
 28) create association between category & pages
 
 29) Use simple_form helper association to create a category drop-down in pages form.
+	f.association	:category
 
 30) Display pages based on category on the category show page.
 
 31) Used partials to make the code dry: both at home as well as the category show page.
+
+32) Show the pages on homepage based on category.
 
 ------------
 - Please keep committing to git & pushing to Github.
