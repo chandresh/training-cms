@@ -10,18 +10,12 @@ from http://www.templatemo.com
 
 5) Send me your Github repo link
 
-https://github.com/orlybg/minicms
-https://github.com/mikekhd/shiny-nemesis.git
-https://github.com/EvgeniiS/Practice.git
-https://github.com/krison44/ruby_cms
-https://github.com/JPGMX/gitproject
-https://github.com/osmarmon32/test-cms
-
 6) use the template:
 -> delete public/index.html
 -> create a controller pages & action home:
 	rails g controller pages home
--> add the html from the template (only the part between <body></body>) to your layouts/application.html.erb . Important: keep the head part as it was.
+-> add the html from the template (only the part between <body></body>) to your layouts/application.html.erb . Important:
+keep the head part as it was.
 -> convert <img src>'s to <%= image_tag "image.jpg" %>
 -> copy the stylesheet to assets. Rename to .scss (e.g. style.css.scss)
 -> Change the images from: 
