@@ -21,7 +21,7 @@ keep the head part as it was.
 -> Change the images from: 
 background: url(images/img02.gif) to background: url("img02.gif")
 
-7) create a pages model/scaffold
+7) create a pages scaffold
 
 8) use friendly_id v 4
 
