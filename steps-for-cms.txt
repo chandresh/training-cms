@@ -86,8 +86,14 @@ def home
 
 ###
 
-21) Create authenticate method and use it in before_filter
+21) Create authenticate_with_basic method and use it in before_filter:
+
 	Use: authenticate_or_request_with_http_basic
+	 def authenticate_with_basic
+    	    authenticate_or_request_with_http_basic('Administration') do |username, password|
+      	    session[:admin] = (username == 'admin' && password == 'secret')
+    	 end
+  	
 
 22) Use sessions to store if an admin is logged in and use it to check if we should show the admin options like edit.
 	Use: session[:admin]
